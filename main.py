@@ -54,8 +54,28 @@ def save_line(path, text):
         fh.write(text)
 
 
+def check_single_line(text):
+    """One line only: no newline anywhere, not even trailing."""
+    assert "\n" not in text and "\r" not in text, "entry must be a single line"
+    return text
+
+
+def check_beats(text, want=3):
+    """The laugh recipe needs 3 beats: setup, middle, closer.
+
+    Split on the commas the line is written with — exactly three
+    segments, so the escalation survives any later edit intact.
+    """
+    parts = [p.strip() for p in text.split(",")]
+    assert len(parts) == want, f"entry must have {want} beats, got {len(parts)}"
+    assert all(parts), "no beat may be empty"
+    return parts
+
+
 def main():
     check_gate(TEXT)
+    check_single_line(TEXT)
+    check_beats(TEXT)
     save_line(OUT, TEXT)
     saved = OUT.read_text(encoding="utf-8")
     assert saved == TEXT, "round-trip mismatch"
