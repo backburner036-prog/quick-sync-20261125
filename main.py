@@ -11,6 +11,21 @@ named detail, and an absurd closer in the last beat:
 
 Delete the last sentence and the joke loses its meaning: the escalation
 is the punchline, not decoration. 104 characters, under the 200 cap.
+
+Why each word earns its place (laugh recipe, beat by beat):
+  - "15-minute" is the promise the meeting itself makes — the label on the
+    invite, not the narrator's claim. The number is the setup's contract.
+  - "hit minute 47" breaks that contract with a second, larger number:
+    the gap between 15 and 47 is the whole joke's engine, no adjective
+    needed. Concrete numbers beat adjectives; the reader does the math.
+  - "zero decisions" is the middle beat: time spent, nothing decided.
+    It turns a long meeting into a failed meeting, which is funnier.
+  - "spawned three follow-up meetings" is the absurd closer: the meeting
+    whose purpose was saving time breeds more meetings. Cause and effect
+    are inverted — the cure produces the disease. That inversion is the
+    twist, and it lands in the last beat, where the winner pattern says
+    it must. No pun, no stock line, no "Monday blues": the premise is
+    fresh because the escalation is structural, not verbal.
 """
 
 from pathlib import Path
